@@ -82,3 +82,9 @@ I learned how to investigate errors instead of assuming the code is broken. Duri
 
 #### 12. Overall Learning
 The biggest lesson from this phase was that I can learn an unfamiliar technology independently, troubleshoot problems and turn what I learn into a working prototype. I also gained a better understanding of how webhook verification can support a future inventory synchronization service.
+
+### Time Management and Completion
+
+I was behind my original Day 2 timeline and some of my Day 2 work continued into Day 3. I was able to complete the webhook verification mini-prototype, including the frontend, testing, documentation and GitHub submission.
+
+Although I finished later than originally planned, I completed the Day 2 deliverable before moving forward with the Day 3 work. This means I can now participate in the Day 3 original build while keeping a record of the actual time it took me to complete the solo prototype.
