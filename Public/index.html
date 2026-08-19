@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northstar Inventory Sync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <h1>NORTHSTAR</h1>
+            <p>Inventory Sync Monitor</p>
+        </div>
+
+        <div class="online-status">
+            <span class="online-dot"></span>
+            Service Online
+        </div>
+    </header>
+
+    <main>
+
+        <div class="intro">
+            <h2>Inventory Sync</h2>
+            <p>
+                Monitor webhook events and verify incoming inventory updates.
+            </p>
+        </div>
+
+        <div class="status-grid">
+
+            <div class="card">
+                <h3>Service Status</h3>
+                <div class="status-value verified">
+                    ● Online
+                </div>
+                <p class="method">
+                    Webhook service is running
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Verification</h3>
+                <div class="status-value verified">
+                    ✓ Ready
+                </div>
+                <p class="method">
+                    HMAC-SHA256
+                </p>
+            </div>
+
+        </div>
+
+        <section class="card test-area">
+            <h2>Test Webhook Verification</h2>
+
+            <p>
+                Send a test inventory event through the verification service.
+            </p>
+
+            <button id="send-webhook">
+                Send Test Webhook
+            </button>
+
+            <p id="status-message">
+                Ready to test webhook verification.
+            </p>
+        </section>
+
+        <section class="card events">
+            <h2>Recent Events</h2>
+
+            <div class="event">
+                <div>
+                    <div class="event-name">
+                        Stock update
+                    </div>
+                    <div class="event-detail">
+                        SKU-1023
+                    </div>
+                </div>
+
+                <div class="accepted">
+                    Accepted
+                </div>
+            </div>
+
+            <div class="event">
+                <div>
+                    <div class="event-name">
+                        Stock update
+                    </div>
+                    <div class="event-detail">
+                        SKU-1041
+                    </div>
+                </div>
+
+                <div class="accepted">
+                    Accepted
+                </div>
+            </div>
+
+            <div class="event">
+                <div>
+                    <div class="event-name">
+                        Invalid event
+                    </div>
+                    <div class="event-detail">
+                        SKU-1088
+                    </div>
+                </div>
+
+                <div class="rejected">
+                    Rejected
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
